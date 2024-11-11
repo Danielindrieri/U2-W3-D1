@@ -37,12 +37,6 @@ console.log(marco)
 daniel.SiamoUguali(marco)
 
 
-const Namepet = document.getElementById('cucciolo')
-const Ownerpet = document.getElementById('Padrone')
-const Speciepet = document.getElementById('specie')
-const Razza = document.getElementById('breed')
-
-const myForm = document.getElementById('PetForm')
 
 const listaPets = [];
 class Pet{  
@@ -58,6 +52,14 @@ class Pet{
     }
     }
 
+    const Namepet = document.getElementById('cucciolo')
+const Ownerpet = document.getElementById('Padrone')
+const Speciepet = document.getElementById('specie')
+const Razza = document.getElementById('breed')
+
+const myForm = document.getElementById('PetForm')
+
+
     myForm.addEventListener('submit',function(e){
         e.preventDefault()
         const Cliente = new Pet (
@@ -66,7 +68,6 @@ class Pet{
             Speciepet.value, 
             Razza.value  
         )
-        listaPets.push(Cliente)
-        console.log(listaPets)
+        
     })
  
